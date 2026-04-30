@@ -1,0 +1,1768 @@
+.homepage {
+  width: 100%;
+  height: auto;
+}
+
+/********************/
+/** NAVBAR-BOTTOM **/
+
+.homepage .static-frame {
+  width: 100%;
+  height: 190px;
+  border-top: 1px solid #2f5f9e;
+  border-bottom: 1px solid #2f5f9e;
+  background: linear-gradient(180deg, #c0dff5, #e6f4fc);
+}
+
+.homepage .static-frame .info {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage .static-frame .info .static-box {
+  width: 200px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage .static-frame .info .static-box .static-num .iconi {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box .static-num .iconi:hover {
+  transform: scale(1.15);
+}
+
+.homepage .static-frame .info .static-box .static-txt {
+  margin-top: 20px;
+  width: 250px;
+  height: 29px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #2f5f9e;
+}
+
+/***************/
+/** BRANCHES **/
+
+.homepage .branches-frame {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+}
+
+.homepage .branches-frame .branches-section {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .branches-frame .branches-section .category-title {
+  font-family: "Poppins";
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .branches-frame .branches-section .branches {
+  margin-top: 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.homepage .branches-frame .branches-section .branches .logo-img {
+  grid-column: span 3; /* 12 / 4 = 3 */
+  height: 230px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #82a6d4;
+  transition: all 0.3s ease;
+}
+
+.homepage .branches-frame .branches-section .branches .logo-img:nth-child(1),
+.homepage .branches-frame .branches-section .branches .logo-img:nth-child(2),
+.homepage .branches-frame .branches-section .branches .logo-img:nth-child(3) {
+  grid-column: span 4;
+  height: 280px;
+}
+
+.homepage .branches-frame .branches-section .branches .logo-img:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.homepage .branches-frame .branches-section .branches .logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.homepage .branches-frame .branches-section .branches .logo-img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.homepage .branches-frame .branches .logo-img .img-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.homepage .branches-frame .branches .logo-img .img-wrapper .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.homepage .branches-frame .branches .logo-img .img-wrapper .img1 {
+  opacity: 1;
+}
+
+.homepage .branches-frame .branches .logo-img:hover .img1 {
+  opacity: 0;
+}
+
+.homepage .branches-frame .branches .logo-img:hover .img2 {
+  opacity: 1;
+}
+
+.homepage .branches-frame .branches .logo-img:hover .img3 {
+  opacity: 1;
+  transition: opacity 1s ease 0.9s;
+}
+
+@keyframes fadeImage {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.homepage .branches-frame .branches-section .desc-box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  padding: 6px 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  z-index: 2;
+}
+
+.homepage .branches-frame .store-location {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.homepage .branches-frame .store-desc {
+  font-size: 11px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+/*********************/
+/** VISA-STATISTIC **/
+
+.homepage .statistic {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+}
+
+.homepage .visas-stat {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin-top: 28px;
+  padding-bottom: 24px;
+}
+
+.homepage .visas-stat .visas-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.homepage .visas-stat .visas-section .category-title {
+  font-family: "Poppins";
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .visas-stat .visas-section .visa-summary {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  flex-wrap: wrap;
+}
+
+.homepage .visas-stat .visas-section .summary-item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 5px 10px;
+  border-radius: 16px;
+  min-width: 160px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.09);
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.homepage .visas-stat .visas-section .label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #94a3b8;
+  margin-bottom: 1px;
+}
+
+.homepage .visas-stat .visas-section .value {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.homepage .visas-stat .visas-section .value.growth {
+  color: #10b981;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline-flex;
+}
+
+.homepage .visas-stat .visas-section .visa-stat {
+  margin-top: 1px;
+  width: 100%;
+  height: 420px;
+  min-height: 240px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.09);
+  cursor: pointer;
+  z-index: 2;
+  padding: 16px 18px 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.homepage .visas-stat .visas-section .visa-stat:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e0;
+}
+
+.homepage .visas-stat .recharts-cartesian-grid-horizontal line {
+  stroke: #f0f0f0;
+}
+
+.homepage .visas-stat .recharts-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+/*************/
+/* PARTNERS */
+
+.homepage .partners-frame {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+}
+
+.homepage .partners-frame .partners-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .partners-frame .partners-section .category-title {
+  font-family: "Poppins";
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .partners-frame .partners-section .branches {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.homepage .partners-frame .partners-section .branches .logo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 30%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homepage .partners-frame .branches .logo-img:hover {
+  transform: translateY(-6px) scale(1.05);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.homepage .partners-frame .partners-section .branches .logo-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Partner Universities: kichik ekranda 1 qatorda 4 ta logo */
+@media (max-width: 1024px) {
+  .homepage .partners-frame {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 48px;
+  }
+
+  .homepage .partners-frame .partners-section .branches {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px 8px;
+    justify-items: center;
+    align-items: center;
+    justify-content: stretch;
+  }
+
+  .homepage .partners-frame .partners-section .branches .logo-img {
+    width: 100%;
+    max-width: 72px;
+    height: 72px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage .partners-frame .partners-section .branches .logo-img {
+    max-width: 64px;
+    height: 64px;
+  }
+}
+
+/************/
+/** SERVICE **/
+
+.homepage .service {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .service .top-title {
+  margin-top: 50px;
+  font-family: "Poppins";
+  font-size: 50px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .service .category-main {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 5px;
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #2f5f9e;
+}
+
+.homepage .service .btn {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #94a3b8;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.homepage .service .btn.active,
+.homepage .service .btn:hover {
+  background: #ffffff;
+  color: #203057;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.homepage .service .service-wrapper {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 40px;
+}
+
+.homepage .service .service-card {
+  margin-bottom: 50px;
+  margin-top: 35px;
+  width: 300px;
+  height: 260px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--card-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid #2f5f9e;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.homepage .service .service-image {
+  margin-top: 5px;
+  height: 120px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.homepage .service .service-info {
+  padding: 12px;
+}
+
+.homepage .service .service-info .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.homepage .service .service-info .desc {
+  font-size: 15px;
+  color: #666;
+}
+
+.homepage .service .name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #203057;
+  margin-bottom: 5px;
+  letter-spacing: px;
+}
+
+.homepage .service .role {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.homepage .service .extra {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #94a3b8;
+  border-left: 2px solid var(--accent-color);
+  padding-left: 15px;
+}
+
+.homepage .service .socials {
+  margin-top: 25px;
+  display: flex;
+  gap: 12px;
+}
+
+.homepage .service .socials img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.homepage .service .socials img:hover {
+  transform: translateY(-2px) rotate(2deg);
+}
+
+/**************/
+/** LICENSE **/
+
+.homepage .license-frame {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+}
+
+.homepage .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .license-title {
+  font-family: "Poppins";
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.license-slider-wrapper {
+  position: relative;
+  width: 100%;
+
+  margin-top: 30px;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+}
+
+.custom-prev {
+  left: -60px; /* 🔥 tashqariga chiqaradi */
+}
+
+.custom-next {
+  right: -60px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background: #2f5f9e;
+  color: #fff;
+}
+
+.license-swiper {
+  width: 100%;
+}
+
+.license-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.license-img {
+  width: 100%;
+  height: 370px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #9ea4ac;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.license-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.license-img:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+  .license-img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .license-title {
+    font-size: 28px;
+  }
+
+  .license-slider-wrapper {
+    padding: 0 12px;
+  }
+
+  .license-img {
+    height: 200px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .license-img {
+    height: 240px;
+  }
+
+  .license-slider-wrapper {
+    padding: 0 8px;
+  }
+}
+
+/************/
+/** VISAS **/
+
+.homepage .visas-frame {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+  display: flex;
+}
+
+.homepage .visas-frame .visa-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homepage .visas-frame .category-title {
+  font-family: "Poppins";
+  font-size: 36px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .visa-section {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.homepage .visa-section .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage .visa-section .visa-img {
+  width: 300px;
+  height: 370px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.35s ease;
+}
+
+.homepage .visa-section .visa-img img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.homepage .visa-section .visa-img:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.homepage .visa-section .visa-img:hover img {
+  transform: scale(1.08);
+}
+
+/************/
+/** FAQ **/
+.homepage .faq-section {
+  width: 100%;
+  padding: 30px 0;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+  display: flex;
+  justify-content: center;
+}
+
+.homepage .faq-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 50px;
+
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+  align-items: start; /* 🔥 MUHIM */
+}
+
+.homepage .faq-accordion {
+  width: 100%;
+  align-self: flex-start; /* 🔥 ENG MUHIM FIX */
+
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 16px !important;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(47, 95, 158, 0.2);
+
+  box-shadow: 0 8px 20px rgba(47, 95, 158, 0.15);
+
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.homepage .faq-accordion:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(47, 95, 158, 0.25);
+}
+
+.homepage .MuiAccordion-root:before {
+  display: none;
+}
+.homepage .MuiCollapse-root {
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+.homepage .faq-question {
+  font-size: 16px;
+  font-weight: 600;
+  color: #203057;
+}
+
+.homepage .faq-answer {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.homepage .MuiAccordionSummary-expandIconWrapper {
+  color: #2f5f9e;
+  transition: 0.3s;
+}
+
+.homepage .Mui-expanded .MuiAccordionSummary-expandIconWrapper {
+  transform: rotate(180deg);
+}
+
+.homepage .faq-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.homepage .faq-btn button {
+  padding: 14px 34px;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #2f5f9e;
+
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #2f5f9e;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.homepage .faq-btn button:hover {
+  background: #2f5f9e;
+  color: #fff;
+}
+
+.homepage .faq-answer {
+  line-height: 1.8;
+}
+
+.homepage .faq-answer br {
+  margin-bottom: 6px;
+}
+
+/*************/
+/** ADDRESS **/
+
+.homepage .address {
+  padding: 30px 0;
+  width: 100%;
+  background: linear-gradient(180deg, #e6f4fc, #cbe4f7, #e6f4fc);
+}
+
+.homepage .address .address-office {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage .address .address-area1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+}
+
+.homepage .address .address-area2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+}
+
+.homepage .address .title {
+  font-family: "Poppins";
+  font-size: 40px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+
+  /* navbar text gradient */
+  background: linear-gradient(135deg, #27659c, #1e4d8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.homepage .address .map-address {
+  margin-top: 20px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.map-box {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 20px;
+  border: 1px solid #2f5f9e;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.map-box iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.homepage .address .map-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2f5f9e;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .homepage .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/************/
+/** MOBILE **/
+
+@media (max-width: 1200px) {
+  .homepage .visa-section {
+    padding: 0 50px;
+  }
+
+  .homepage .visa-section .visa-img {
+    width: 260px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 900px) {
+  .homepage .visa-section {
+    padding: 0 40px;
+  }
+
+  .homepage .visa-section .visa-img {
+    width: 230px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage .visa-section {
+    padding: 0 10px;
+  }
+
+  .homepage .visa-section .visa-img {
+    width: 100%;
+    max-width: none;
+    height: 230px;
+    border-radius: 12px;
+  }
+
+  /* arrows hide mobile */
+  .homepage .swiper-button-prev,
+  .homepage .swiper-button-next {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .homepage .static-frame {
+    height: auto;
+    padding: 24px 0;
+  }
+
+  .homepage .static-frame .info {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px 22px;
+  }
+
+  .homepage .static-frame .info > span {
+    display: none;
+  }
+
+  .homepage .branches-frame .branches-section .branches .logo-img {
+    grid-column: span 6;
+    height: 220px;
+  }
+
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(1),
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(2) {
+    grid-column: span 6;
+    height: 240px;
+  }
+
+  .homepage .visas-stat {
+    height: auto;
+    margin-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  .homepage .visas-stat .visas-section .visa-stat {
+    height: 360px;
+    padding: 12px 14px 8px;
+  }
+
+  .homepage .visas-stat .visas-section .summary-item {
+    min-width: 140px;
+  }
+
+  .homepage .partners-frame {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .static-frame {
+    padding: 10px 6px;
+  }
+
+  .homepage .static-frame .info {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .homepage .static-frame .info .static-box {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    max-width: none;
+    height: auto;
+    padding: 4px 2px;
+  }
+
+  .homepage .static-frame .info .static-box .static-num .iconi {
+    width: 40px;
+    height: 40px;
+  }
+
+  .homepage .static-frame .info .static-box .static-txt {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    font-size: 9px;
+    margin-top: 6px;
+    line-height: 1.2;
+    padding: 0 1px;
+    word-break: break-word;
+  }
+
+  .homepage .branches-frame .branches-section,
+  .homepage .partners-frame .partners-section {
+    margin-top: 28px;
+  }
+
+  .homepage .branches-frame .branches-section .category-title,
+  .homepage .visas-stat .visas-section .category-title,
+  .homepage .partners-frame .partners-section .category-title,
+  .homepage .license-title,
+  .homepage .visas-frame .category-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .homepage .branches-frame .branches-section .branches {
+    gap: 8px;
+  }
+
+  /* Telefon: qatoriga 3 ta kichik karta (12 / 4 = 3) */
+  .homepage .branches-frame .branches-section .branches .logo-img,
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(1),
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(2) {
+    grid-column: span 4;
+    height: 118px;
+    border-radius: 12px;
+  }
+
+  /* Mobil maxsus:
+     1-2 (Janubiy Koreya, O'zbekiston) kattaroq va bitta qatorda 2 ta */
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(1),
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(2) {
+    grid-column: span 6;
+    height: 140px;
+  }
+
+  /* 3-karta (Qirg'iziston) pastki qatorga tushadi va qolganlari 3 tadan */
+  .homepage
+    .branches-frame
+    .branches-section
+    .branches
+    .logo-img:nth-child(n + 3) {
+    grid-column: span 4;
+    height: 118px;
+  }
+
+  /*
+   * Qirg'iziston branchi: rasm fayli boshqa davlatlar bilan bir xil kanvasda emas —
+   * mobil qatorda Qozog'iston/Yaponiya bilan solishtirganda kichikroq ko'rinishni bartaraf etish.
+   */
+  .homepage
+    .branches-frame
+    .branches-section
+    .branches
+    .logo-img:nth-child(3)
+    > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(1.1);
+    transform-origin: center center;
+  }
+
+  .homepage .branches-frame .branches-section .desc-box {
+    bottom: 4px;
+    width: 96%;
+    padding: 3px 5px;
+    gap: 1px;
+    border-radius: 8px;
+  }
+
+  .homepage .branches-frame .store-location {
+    font-size: 9px;
+    line-height: 1.15;
+  }
+
+  .homepage .branches-frame .store-desc {
+    font-size: 7px;
+    line-height: 1.15;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3;
+  }
+
+  .homepage .visas-stat .visas-section .visa-summary {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .homepage .visas-stat .visas-section .summary-item {
+    min-width: 120px;
+  }
+
+  .homepage .visas-stat .visas-section .value {
+    font-size: 18px;
+  }
+
+  .homepage .visas-stat .visas-section .value.growth {
+    font-size: 17px;
+  }
+
+  .homepage .visas-stat .visas-section .visa-stat {
+    height: 300px;
+    padding: 8px 8px 6px;
+  }
+
+  .homepage .service .category-main::-webkit-scrollbar {
+    display: none;
+  }
+
+  .homepage .service .btn {
+    flex: 0 0 auto;
+    padding: 8px 12px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .custom-prev,
+  .custom-next {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage .static-frame .info .static-box .static-num .iconi {
+    width: 36px;
+    height: 36px;
+  }
+
+  .homepage .static-frame .info .static-box .static-txt {
+    font-size: 8px;
+    margin-top: 4px;
+  }
+
+  .homepage .branches-frame .branches-section .branches .logo-img,
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(1),
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(2) {
+    height: 108px;
+  }
+
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(1),
+  .homepage .branches-frame .branches-section .branches .logo-img:nth-child(2) {
+    height: 126px;
+  }
+
+  .homepage .branches-frame .store-location {
+    font-size: 8px;
+  }
+
+  .homepage .branches-frame .store-desc {
+    font-size: 6px;
+  }
+
+  .homepage .visas-stat .visas-section .visa-stat {
+    height: 268px;
+  }
+
+  .homepage .service .top-title {
+    font-size: 22px;
+  }
+
+  .homepage .service .btn {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+}
+
+/* ================= MOBILE LINKS DROPDOWN ================= */
+
+/* ================= MOBILE SERVICE ================= */
+@media (max-width: 768px) {
+  .homepage .service .service-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 ta ustun */
+    gap: 8px;
+    justify-items: center;
+  }
+
+  .homepage .service .service-card {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    min-height: 80px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 16px;
+  }
+
+  .homepage .service .service-image {
+    display: none;
+  }
+
+  .homepage .service .service-info {
+    padding: 5px 12px;
+  }
+
+  .homepage .service .service-info .title {
+    font-size: 16px;
+  }
+
+  .homepage .service .service-info .desc {
+    font-size: 13px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .homepage .service .service-card {
+    max-width: 220px;
+    min-height: 80px;
+  }
+
+  .homepage .service .service-image {
+    display: none;
+  }
+
+  .homepage .service .service-info .title {
+    font-size: 15px;
+  }
+
+  .homepage .service .service-info .desc {
+    font-size: 12px;
+  }
+}
+
+/* ================= MOBILE ADDRESS ================= */
+@media (max-width: 768px) {
+  .homepage .address {
+    padding: 20px 15px;
+  }
+
+  .homepage .address .address-office {
+    flex-direction: column; /* yonma-yon emas, pastma-past */
+    gap: 30px;
+  }
+
+  .homepage .address .address-area1,
+  .homepage .address .address-area2 {
+    width: 100%; /* 600px o‘rniga full */
+  }
+
+  .homepage .address .title {
+    font-size: 28px; /* kichraytirildi */
+  }
+
+  .homepage .address .map-address {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .map-box {
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+
+  .map-box iframe {
+    height: 300px; /* 450 → 300 */
+  }
+
+  .homepage .address .map-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .homepage .address .title {
+    font-size: 24px;
+  }
+
+  .map-box iframe {
+    height: 250px;
+  }
+
+  .homepage .address .map-address {
+    font-size: 13px;
+  }
+
+  .homepage .address .map-btn {
+    width: 100%; /* button full width */
+    text-align: center;
+  }
+}
+
+/* =========================
+   DARK MODE - HOMEPAGE
+========================= */
+
+body.dark .homepage {
+  background: #0f172a;
+}
+
+/* =========================
+   STATIC FRAME
+========================= */
+
+body.dark .homepage .static-frame {
+  border-top: 1px solid rgba(96, 165, 250, 0.22);
+  border-bottom: 1px solid rgba(96, 165, 250, 0.22);
+  background: linear-gradient(180deg, #111827, #0f172a);
+}
+
+body.dark .homepage .static-frame .info .static-box .static-txt {
+  color: #93c5fd;
+}
+
+/* =========================
+   SHARED SECTION BACKGROUNDS
+========================= */
+
+body.dark .homepage .branches-frame,
+body.dark .homepage .statistic,
+body.dark .homepage .partners-frame,
+body.dark .homepage .license-frame,
+body.dark .homepage .visas-frame,
+body.dark .homepage .faq-section {
+  background: linear-gradient(180deg, #111827, #0f172a, #111827);
+}
+
+/* =========================
+   SHARED TITLES
+========================= */
+
+body.dark .homepage .branches-frame .branches-section .category-title,
+body.dark .homepage .visas-stat .visas-section .category-title,
+body.dark .homepage .partners-frame .partners-section .category-title,
+body.dark .homepage .license-title,
+body.dark .homepage .visas-frame .category-title,
+body.dark .homepage .faq-title {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   BRANCHES
+========================= */
+
+body.dark .homepage .branches-frame .branches-section .branches .logo-img {
+  background: #111827;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark
+  .homepage
+  .branches-frame
+  .branches-section
+  .branches
+  .logo-img:hover {
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.42);
+  border-color: rgba(147, 197, 253, 0.45);
+}
+
+body.dark
+  .homepage
+  .branches-frame
+  .branches-section
+  .branches
+  .logo-img::after {
+  background: linear-gradient(to top, rgba(2, 6, 23, 0.9), transparent);
+}
+
+body.dark .homepage .branches-frame .branches-section .desc-box {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.dark .homepage .branches-frame .store-location {
+  color: #f8fafc;
+}
+
+body.dark .homepage .branches-frame .store-desc {
+  color: #cbd5e1;
+}
+
+/* =========================
+   VISA STATISTIC
+========================= */
+
+body.dark .homepage .visas-stat .visas-section .summary-item {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+body.dark .homepage .visas-stat .visas-section .label {
+  color: #94a3b8;
+}
+
+body.dark .homepage .visas-stat .visas-section .value {
+  color: #f8fafc;
+}
+
+body.dark .homepage .visas-stat .visas-section .value.growth {
+  color: #34d399;
+}
+
+body.dark .homepage .visas-stat .visas-section .visa-stat {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
+}
+
+body.dark .homepage .visas-stat .visas-section .visa-stat:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(147, 197, 253, 0.3);
+}
+
+body.dark .homepage .visas-stat .recharts-cartesian-grid-horizontal line {
+  stroke: rgba(255, 255, 255, 0.08);
+}
+
+body.dark .homepage .visas-stat .recharts-text {
+  fill: #cbd5e1;
+}
+
+/* X/Y axis labels, tooltip text fallback */
+body.dark .homepage .visas-stat .recharts-layer,
+body.dark .homepage .visas-stat .recharts-label {
+  color: #cbd5e1;
+}
+
+/* =========================
+   PARTNERS
+========================= */
+
+body.dark .homepage .partners-frame .partners-section .branches .logo-img {
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+body.dark .homepage .partners-frame .branches .logo-img:hover {
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.32);
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+body.dark .homepage .service {
+  background: linear-gradient(180deg, #111827, #0f172a, #111827);
+}
+
+body.dark .homepage .service .top-title {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark .homepage .service .category-main {
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+body.dark .homepage .service .btn {
+  color: #94a3b8;
+}
+
+body.dark .homepage .service .btn.active,
+body.dark .homepage .service .btn:hover {
+  background: #1f2937;
+  color: #f8fafc;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+body.dark .homepage .service .service-card {
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .homepage .service .service-info .title {
+  color: #f1f5f9;
+}
+
+body.dark .homepage .service .service-info .desc {
+  color: #94a3b8;
+}
+
+/* =========================
+   LICENSE
+========================= */
+
+body.dark .homepage .license-img {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+body.dark .homepage .license-img:hover {
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.38);
+}
+
+body.dark .homepage .custom-prev,
+body.dark .homepage .custom-next {
+  background: #1f2937;
+  color: #f8fafc;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+body.dark .homepage .custom-prev:hover,
+body.dark .homepage .custom-next:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================
+   VISAS SLIDER
+========================= */
+
+body.dark .homepage .visa-section .visa-img {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
+body.dark .homepage .visa-section .visa-img:hover {
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.42);
+}
+
+/* =========================
+   FAQ
+========================= */
+
+body.dark .homepage .faq-accordion {
+  background: rgba(15, 23, 42, 0.55) !important;
+  border: 1px solid rgba(96, 165, 250, 0.16);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .homepage .faq-accordion:hover {
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.38);
+}
+
+body.dark .homepage .faq-question {
+  color: #e2e8f0;
+}
+
+body.dark .homepage .faq-answer {
+  color: #cbd5e1;
+}
+
+body.dark .homepage .MuiAccordionSummary-expandIconWrapper {
+  color: #60a5fa;
+}
+
+body.dark .homepage .faq-btn button {
+  color: #dbeafe;
+  background: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(96, 165, 250, 0.45);
+}
+
+body.dark .homepage .faq-btn button:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================
+   ADDRESS
+========================= */
+body.dark .homepage .address {
+  background: linear-gradient(180deg, #111827, #0f172a);
+}
+
+body.dark .homepage .address .title {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.dark .homepage .address .map-address {
+  color: #cbd5e1;
+}
+
+body.dark .homepage .address .map-box {
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .homepage .address .map-btn {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+body.dark .homepage .address .map-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   OPTIONAL POLISH
+========================= */
+
+body.dark .homepage .static-frame,
+body.dark .homepage .branches-frame,
+body.dark .homepage .statistic,
+body.dark .homepage .partners-frame,
+body.dark .homepage .license-frame,
+body.dark .homepage .visas-frame,
+body.dark .homepage .faq-section {
+  position: relative;
+}
+
+body.dark .homepage .branches-frame::before,
+body.dark .homepage .statistic::before,
+body.dark .homepage .partners-frame::before,
+body.dark .homepage .license-frame::before,
+body.dark .homepage .visas-frame::before,
+body.dark .homepage .faq-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(59, 130, 246, 0.08),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(147, 197, 253, 0.06),
+      transparent 24%
+    );
+}
