@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/itopedu.uz/static/css/main.1c87fbe6.css",
-    "main.js": "/itopedu.uz/static/js/main.e75cfb67.js",
+    "main.js": "/itopedu.uz/static/js/main.0718293d.js",
     "static/js/787.ecb821df.chunk.js": "/itopedu.uz/static/js/787.ecb821df.chunk.js",
     "index.html": "/itopedu.uz/index.html",
     "main.1c87fbe6.css.map": "/itopedu.uz/static/css/main.1c87fbe6.css.map",
-    "main.e75cfb67.js.map": "/itopedu.uz/static/js/main.e75cfb67.js.map",
+    "main.0718293d.js.map": "/itopedu.uz/static/js/main.0718293d.js.map",
     "787.ecb821df.chunk.js.map": "/itopedu.uz/static/js/787.ecb821df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c87fbe6.css",
-    "static/js/main.e75cfb67.js"
+    "static/js/main.0718293d.js"
   ]
 }
