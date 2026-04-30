@@ -145,7 +145,7 @@ export default function Footer() {
                     }}
                   >
                     <img
-                      src={process.env.PUBLIC_URL + " /icons/flag/uzbek.png"}
+                      src={process.env.PUBLIC_URL + "/icons/flag/uzbek.png"}
                       className="flag-icon"
                     />
                     Uzbekistan
